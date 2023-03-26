@@ -1,0 +1,60 @@
+<html>
+<head>
+ <link rel="stylesheet" href="stil.css">
+ <script src="skripta.js"></script>
+</head>
+
+
+<body>
+        <!-- <div class="iskocimi" id="iskocimi"> 
+            <input type="text" id="user" oninput="Userko(this)"> <p>korisnik</p>
+            <input type="password" id="pass"> <p>sifra</p>
+            <button id="log" onclick="poz()">log</button>
+        </div> -->
+        <p  id="userinfo"></p>
+<div class="sala">
+    <div class="stolovi">
+        <div class="sto" onclick="racuniSaStola(prviRacun)" id="prvi"><p>1</p></div>
+        <div class="sto" onclick="racuniSaStola(drugiRacun)" id="drugi"><p>2</p></div>
+        <div class="sto" onclick="racuniSaStola(treciRacun)" id="treci"><p>3</p></div>
+        <div class="sto" onclick="racuniSaStola(cetvrtiRacun)" id="cetvrti"><p>4</p></div>
+        <div class="sto" onclick="racuniSaStola(petiRacun)" id="peti"><p>5</p></div>
+        <div class="sto" onclick="racuniSaStola(sestiRacun)" id="sesti"><p>6</p></div>
+        <div class="sto" onclick="racuniSaStola(sedmiRacun)" id="sedmi"><p>7</p></div>
+    </div>
+    <div>
+        <table id="porudzbine">
+            <tr>
+                <th>naziv</th>
+                <th>kolicina</th>
+                <th>jedinacna cena</th>
+                <th>ukupno</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="unos" id="unos">
+                        <option value="kola">Kola</option>
+                        <option value="fanta">Fanta</option>
+                        <option value="kafa">Kafa</option>
+                        <option value="kokta">Kokta</option>
+                        <option value="buranija">Buranija</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="kol" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <button>dodaj</button>
+    </div>
+    <button>placeno</button>
+</div>
+
+
+
+
+</body>
+
+</html>
