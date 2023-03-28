@@ -6,11 +6,17 @@
 
 
 <body>
-        <!-- <div class="iskocimi" id="iskocimi"> 
+    <div class="pokusajStatea">
+        <p>TRENUTNI BROJ GOSTIJU UNUTRI</p><p id="counter"></p>
+  <button id="increment">+</button>
+  <button id="decrement">-</button>
+  <button id="reset">ide inspekcija</button>
+    </div>
+        <div class="iskocimi" id="iskocimi"> 
             <input type="text" id="user" oninput="Userko(this)"> <p>korisnik</p>
             <input type="password" id="pass"> <p>sifra</p>
             <button id="log" onclick="poz()">log</button>
-        </div> -->
+        </div>
         <p  id="userinfo"></p>
 <div class="sala">
     <div class="stolovi">
@@ -19,10 +25,8 @@
         <div class="sto" onclick="racuniSaStola(treciRacun)" id="treci"><p>3</p></div>
         <div class="sto" onclick="racuniSaStola(cetvrtiRacun)" id="cetvrti"><p>4</p></div>
         <div class="sto" onclick="racuniSaStola(petiRacun)" id="peti"><p>5</p></div>
-        <div class="sto" onclick="racuniSaStola(sestiRacun)" id="sesti"><p>6</p></div>
-        <div class="sto" onclick="racuniSaStola(sedmiRacun)" id="sedmi"><p>7</p></div>
     </div>
-    <div>
+    <div class="tabela">
         <table id="porudzbine">
             <tr>
                 <th>naziv</th>
@@ -30,26 +34,22 @@
                 <th>jedinacna cena</th>
                 <th>ukupno</th>
             </tr>
+        </table>
+        <div class="cene">
+        <p>CENA BEZ PDV</p><p id="reduserZbir"></p>
+        <P>CENA SA PDV</P><p id="pedeve"></p>
+        <button onclick="placeno()" class="dugmic">placeno</button></div>
+    </div>
+
+    <div class="rekurzi">
+        <p onclick="mojaRekurzija(meni, '')" class="meni">prikazi meni</p>
+        <table id="pica">
             <tr>
-                <td>
-                    <select name="unos" id="unos">
-                        <option value="kola">Kola</option>
-                        <option value="fanta">Fanta</option>
-                        <option value="kafa">Kafa</option>
-                        <option value="kokta">Kokta</option>
-                        <option value="buranija">Buranija</option>
-                    </select>
-                </td>
-                <td>
-                    <input type="text" id="kol" />
-                </td>
+                <th>naziv</th>
+                <th>cena</th>
             </tr>
         </table>
     </div>
-    <div>
-        <button>dodaj</button>
-    </div>
-    <button>placeno</button>
 </div>
 
 
